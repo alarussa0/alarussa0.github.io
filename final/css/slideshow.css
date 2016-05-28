@@ -1,0 +1,47 @@
+#slideshow {
+    position: relative;
+    width: 100%;
+   height: 100%;
+   max-width: 100%;
+    padding-bottom: 28%;
+  }
+
+#slideshow div {
+   position:absolute;
+   	width: 100%;
+	height: 100%;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+    background-color: #FFF;
+}
+
+#slideshow div.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow div.last-active {
+    z-index:9;
+}
+
+#slideshow div img {
+    max-width: 100%;
+	min-width: 100%;
+    display: block;
+    border: 0;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    #slideshow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #slideshow {
+        display: none;
+    }
+}

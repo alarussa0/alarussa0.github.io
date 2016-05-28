@@ -1,0 +1,5 @@
+Issues:
+- nav menu clips over container in smartphone width
+
+To do:
+- make things look pretty

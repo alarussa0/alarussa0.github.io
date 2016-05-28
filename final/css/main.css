@@ -1,0 +1,375 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:400,700|Open+Sans:400,400italic);
+
+/* clearfix */
+.clearfix:before,  
+.clearfix:after {  
+    content: " ";  
+    display: table;  
+}  
+.clearfix:after {  
+    clear: both;  
+}  
+.clearfix {  
+    *zoom: 1;  
+}
+
+.highlight {
+    background-color: white;
+}
+.highlight img:hover {
+    opacity: .90;
+}
+
+/* divisions */
+#container {
+    width: 944px;
+    margin: 0 auto;
+    background-color: #ddd;
+    padding: 16px;
+}
+
+.js-video {
+  height: 0;
+  padding-top: 25px;
+  padding-bottom: 67.5%;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+ 
+.js-video.widescreen {
+  padding-bottom: 56.34%;
+}
+ 
+.js-video.vimeo {
+  padding-top: 0;
+}
+
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+#article img {
+    max-width: 100%;
+    min-width: 100%;
+    
+}
+
+#banner {
+    height: auto;
+    background: #ddd;
+    max-width: 100%;
+    position: relative;
+}
+
+#banner img {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+#text-inner {
+    position: absolute;
+    bottom: 0%;
+    top: 0%;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); /*Safari 5.1-6*/
+    background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); /*Opera 11.1-12*/
+    background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1)); /*Fx 3.6-15*/
+    background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)); /*Standard*/
+}
+
+#caption {
+ position: absolute;
+ bottom: 5%;
+ left: 10%;    
+}
+
+#text-inner h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 48px;
+    color: #fff;
+    padding-bottom: .1em;
+}
+
+#text-inner p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    color: #fff;
+}
+
+#text h1 {
+    font-family: 'Oswald', sans-serif;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 32px;
+    font-size: 32px;
+    display: none;
+}
+
+#text h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    padding-bottom: .5em;
+    padding-left: 32px;
+    display: none;
+}
+
+#text h3 {
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 18px;
+    padding-left: 32px;
+}
+
+#text p {
+    font-family: 'Open Sans', sans-serif;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 18px;
+    line-height: 1.5em;
+}
+
+#text p a {
+    color: #7e681f;
+    text-decoration: none;
+}
+
+#text p a:hover {
+    color: #eace3e;
+}
+
+#text img {
+    max-height: 100%;
+    max-width: 100%;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: block;
+    margin: 0 auto;
+}
+
+/* css style */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: #cccccc;
+}
+
+header {
+    height: 40px;
+    text-align: center;
+    padding-top: 2em;
+    background: #222218;
+}
+
+header h1 {
+    font-size: 16px;
+    text-align: left;
+    padding-left: 2em;
+}
+
+header img {
+    max-height: 50%;
+}
+
+nav {  
+    height: 40px;  
+    width: 100%;  
+    background: #222218;  
+    font-size: 12pt;  
+    font-family: 'Open Sans', sans-serif;  
+    font-weight: bold;  
+    position: relative;
+}  
+
+nav ul {  
+    padding: 0;  
+    margin: 0 auto;  
+    width: 600px;  
+    height: 40px;  
+    float: right;
+}  
+
+nav li {  
+    display: inline;  
+      
+    list-style-type: none;  
+}
+
+nav .col {
+    margin: 0;
+}
+
+nav a {  
+    color: #cccccc;  
+    display: inline-block;  
+    width: 100%;  
+    text-align: center;  
+    text-decoration: none;  
+    line-height: 40px;  
+}
+
+nav li a {  
+    border-right: 1px solid #666;  
+    box-sizing:border-box;  
+    -moz-box-sizing:border-box;  
+    -webkit-box-sizing:border-box;  
+}  
+
+nav li:last-child a {  
+    border-right: 0;  
+} 
+
+nav a:hover, nav a:active {  
+    background-color: #7e681f;
+    color: #fff;
+}
+
+nav a#pull {  
+    display: none;  
+} 
+
+/* fixed width threshold (960px) */
+@media screen and (max-width: 960px) {  
+    nav {   
+        height: auto;  
+    }  
+    
+    nav ul {  
+        width: 95%;  
+        display: block;  
+        height: auto;
+        float: center;
+    }  
+    
+    nav li {  
+        width: 50%;  
+        float: center;  
+        position: relative;  
+    }  
+    
+    nav li a {    
+        border-right: 1px solid #666;  
+    }  
+    
+    nav a {  
+        text-align: center;  
+        width: 100%;      
+    } 
+    
+    #container {
+        width: 95%;
+        margin: 0 auto;
+    }
+}
+
+/* tablet screens */
+@media screen and (max-width: 600px) {  
+    nav {   
+        height: auto;  
+    }  
+    
+    nav ul {  
+        width: 95%;  
+        display: block;  
+        height: auto;
+        float: center;
+    }  
+    
+    nav li {  
+        width: 50%;  
+        float: center;  
+        position: relative;  
+    }  
+    
+    nav li a {  
+        border-right: 1px solid #666;
+        border-bottom: 1px solid #666;
+    }  
+    
+    nav a {  
+        text-align: center;  
+        width: 100%;      
+    } 
+    
+    #container {
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    nav li:nth-child(2n+2) a {  
+    border-right: 0;  
+    }
+}  
+
+/* smartphone screens */
+@media only screen and (max-width: 480px) {  
+    nav {  
+        border-bottom: 0;
+    }  
+    
+    nav ul {  
+        display: none;  
+        height: auto;
+    }  
+
+    nav li {
+        display: block;
+        float: none;
+        width: 100%;
+    }
+    
+    nav a {
+        text-indent: 25px;
+        text-align: left;
+    }
+    
+    nav li a {
+        border-bottom: 1px solid #666;
+    }
+
+    nav a#pull {
+        display: block;  
+        background-color: #222218; 
+        border-bottom: 1px solid #666; 
+        width: 100%;  
+        position: relative;
+    }  
+    
+    nav a#pull:after {  
+        content: "\f0d7";
+        font-family: FontAwesome;
+        width: 64px;  
+        height: 64px;  
+        display: inline-block;  
+        position: absolute;  
+        left: 50px;  
+        top: 0px;  
+    }  
+    
+    #container {
+        width: 95%;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    header h1 {
+    text-align: center;
+    }
+    
+    #banner {
+        display: none;
+    }
+    
+    #text h1 {
+        display: block;
+    }
+    
+    #text h2 {
+        display: block;
+    }
+}  
