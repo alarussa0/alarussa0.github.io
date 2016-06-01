@@ -1,0 +1,25 @@
+/* CSS Document */
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-align: center;
+	padding-top: 10px;
+}
+
+#page {
+	width: 60%;
+	margin: 0 auto;
+	background-color: #CDCDCD;
+}
+
+nav {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+p {
+	padding: 10px;
+}
